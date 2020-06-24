@@ -8,10 +8,6 @@ body {
   height: 850px;
   margin: auto;
   margin-top: 70px;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; */
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   overflow: auto;
