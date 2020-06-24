@@ -8,36 +8,41 @@ body {
   height: 850px;
   margin: auto;
   margin-top: 70px;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  overflow: auto;
 }
 
 .block {
   width: 400px;
   box-sizing: border-box;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  float: left;
 }
 
-.block h3 {
+h3 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.block h3 span {
   background: #FFF44F;
-  padding: 0 20px;
+  padding: 5px;
+  margin: 0;
 }
 
-.block p {
-  width: 100%;
+p, li {
+  font-size: 1.18em;
+  font-weight: 600;
 }
 
-.block strong {
+.block p span {
+  font-size: 1.94em;
+  text-transform: none;
   font-weight: bolder;
-  text-transform: full-width;
 }
 
 .block ul li {
@@ -45,18 +50,39 @@ body {
 }
 .large-block{
   height: 430px;
+  padding-top: 75px;
 }
 
 .small-block {
   height: 210px;
+  padding-top: 50px;
 }
 
-.mid-box {
+#grow, #freelance, #travel, #mind-body {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#eye {
   color: #fff;
 }
 
-.mid-box span {
+#eye h2 {
   font-family: 'Permanent Marker', cursive;
+  font-size: 1.8em;
+  margin-bottom: 0
+}
+
+#eye p {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+#flower, #code, #activity, #dog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
 }
 
 .center-align {
