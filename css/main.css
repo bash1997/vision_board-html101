@@ -1,0 +1,80 @@
+body {
+  background: #E8E8E8;
+}
+
+#vision-board {
+  background: url('../img/background.png');
+  width: 1200px;
+  height: 850px;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.block {
+  width: 400px;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.block h3 {
+  background: #FFF44F;
+  padding: 0 20px;
+}
+
+.block p {
+  width: 100%;
+}
+
+.block strong {
+  font-weight: bolder;
+  text-transform: full-width;
+}
+
+.block ul li {
+  list-style: none;
+}
+.large-block{
+  height: 430px;
+}
+
+.small-block {
+  height: 210px;
+}
+
+.mid-box {
+  color: #fff;
+}
+
+.mid-box span {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.light-bg {
+  background: #fff;
+}
+
+.dark-bg {
+  background: #3B3B3B;
+}
