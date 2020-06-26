@@ -1,37 +1,42 @@
-body {
-  background: #E8E8E8;
+html {
+  font-size: 16px;
 }
 
 #vision-board {
-  background: url('../img/background.png');
-  width: 1200px;
-  height: 850px;
+  width: 100%;
   margin: auto;
-  margin-top: 50px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
   overflow: auto;
 }
 
 .block {
-  width: 400px;
+  width: 100%;
   box-sizing: border-box;
-  float: left;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap;
+  /* padding: 15px 20px; */
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 2.75em;
   font-weight: 900;
 }
 
 .block h3 span {
   background: #FFF44F;
-  padding: 5px;
+  padding: 15px;
   margin: 0;
 }
 
 p, li {
-  font-size: 1.18em;
+  font-size: 3em;
   font-weight: 600;
 }
 
@@ -44,33 +49,33 @@ p, li {
 .block ul li {
   list-style: none;
 }
-.large-block{
-  height: 430px;
-  padding-top: 75px;
+
+.large-block {
+  height: 1025px;
+}
+
+img {
+  width: 60%;
+  align-self: center;
 }
 
 .small-block {
-  height: 210px;
-  padding-top: 50px;
-}
-
-#grow, #freelance, #travel, #mind-body {
-  padding-left: 50px;
-  padding-right: 50px;
+  height: 607px;
 }
 
 #eye {
   color: #fff;
+  order: -1;
 }
 
 #eye h2 {
   font-family: 'Permanent Marker', cursive;
-  font-size: 1.8em;
+  font-size: 3em;
   margin-bottom: 0
 }
 
 #eye p {
-  font-size: 2em;
+  font-size: 4em;
   margin-top: 0;
 }
 
@@ -81,16 +86,16 @@ p, li {
   padding-top: 0;
 }
 
-.center-align {
-  text-align: center;
+#flower, #freelance, #travel, #dog {
+  background: url('../img/background.png');
 }
 
-.right-align {
-  text-align: right;
+#freelance {
+  background: #dcf3f5;
 }
 
-.left-align {
-  text-align: left;
+#travel {
+  background: #faf1ef;
 }
 
 .light-bg {
@@ -99,4 +104,17 @@ p, li {
 
 .dark-bg {
   background: #3B3B3B;
+  height: 1250px;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: center;
+}
+
+.left-align {
+  text-align: center;
 }
