@@ -21,7 +21,6 @@ html {
   justify-content: center;
   align-content: center;
   flex-flow: column wrap;
-  /* padding: 15px 20px; */
 }
 
 h3 {
@@ -79,6 +78,10 @@ img {
   margin-top: 0;
 }
 
+#eye img {
+  width: 50%;
+}
+
 #flower, #code, #activity, #dog {
   display: flex;
   justify-content: center;
@@ -86,7 +89,7 @@ img {
   padding-top: 0;
 }
 
-#flower, #freelance, #travel, #dog {
+#flower, #dog {
   background: url('../img/background.png');
 }
 
@@ -117,4 +120,102 @@ img {
 
 .left-align {
   text-align: center;
+}
+
+@media screen and (min-width: 700px) and (max-width: 999px) {
+
+  body {
+    background: url('../img/background.png');
+  }
+
+  .block {
+    width: 50%;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 2.125em;
+  }
+
+  .block p span {
+    font-size: 3.5rem;
+  }
+
+  .large-block {
+    height: 607px;
+  }
+
+  .dark-bg {
+    height: 850px;
+    width: 100%;
+  }
+
+
+  #eye h2 {
+    font-size: 2.7em;
+  }
+
+  #eye p {
+    font-size: 3.5em;
+  }
+
+  #eye img {
+    width: 35%;
+  }
+
+  #grow {
+    order: 0;
+  }
+
+  #flower {
+    order: 1;
+  }
+
+  #freelance {
+    background: url('../img/background.png');
+    order: 2;
+  }
+
+  #code {
+    order: 3;
+  }
+
+  #travel{
+    background: url('../img/background.png');
+    order: 5;
+  }
+
+  #activity {
+    order: 4;
+  }
+
+  #dog {
+    order: 5;
+  }
+
+  #mind-body {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+  #grow, #freelance, #travel, #mind-body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .center-align {
+    text-align: center;
+  }
+
+  .right-align {
+    text-align: right;
+  }
+
+  .left-align {
+    text-align: left;
+  }
 }
