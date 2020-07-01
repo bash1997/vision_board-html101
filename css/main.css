@@ -1,7 +1,3 @@
-html {
-  font-size: 16px;
-}
-
 #vision-board {
   width: 100%;
   margin: auto;
@@ -12,6 +8,7 @@ html {
   align-content: center;
   flex-flow: row wrap;
   overflow: auto;
+  background: url('../img/background.png') center;
 }
 
 .block {
@@ -21,22 +18,28 @@ html {
   justify-content: center;
   align-content: center;
   flex-flow: column wrap;
+  /* border: pink 1px solid; */
 }
 
 h3 {
-  font-size: 2.75em;
+  font-size: 1.5em;
   font-weight: 900;
 }
 
 .block h3 span {
   background: #FFF44F;
-  padding: 15px;
+  padding: 10px;
   margin: 0;
 }
 
 p, li {
-  font-size: 3em;
+  font-size: 1.125em;
   font-weight: 600;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .block p span {
@@ -50,16 +53,32 @@ p, li {
 }
 
 .large-block {
-  height: 1025px;
-}
-
-img {
-  width: 60%;
-  align-self: center;
+  height: 475px;
 }
 
 .small-block {
-  height: 607px;
+  height: 320px;
+}
+
+img {
+  width: 50%;
+  align-self: center;
+}
+
+#grow {
+  order: 0;
+}
+
+#flower {
+  order: 1;
+}
+
+#code {
+  order: 2;
+}
+
+#freelance {
+  order: 3;
 }
 
 #eye {
@@ -69,12 +88,12 @@ img {
 
 #eye h2 {
   font-family: 'Permanent Marker', cursive;
-  font-size: 3em;
-  margin-bottom: 0
+  font-size: 1.75em;
+  margin-bottom: 0;
 }
 
 #eye p {
-  font-size: 4em;
+  font-size: 2em;
   margin-top: 0;
 }
 
@@ -83,22 +102,23 @@ img {
 }
 
 #flower, #code, #activity, #dog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 0;
 }
 
-#flower, #dog {
-  background: url('../img/background.png');
-}
-
-#freelance {
-  background: #dcf3f5;
-}
-
 #travel {
-  background: #faf1ef;
+  order: 4
+}
+
+#activity {
+  order: 5;
+}
+
+#dog {
+  order: 6;
+}
+
+#mind-body {
+  order: 7;
 }
 
 .light-bg {
@@ -107,7 +127,7 @@ img {
 
 .dark-bg {
   background: #3B3B3B;
-  height: 1250px;
+  height: 525px;
 }
 
 .center-align {
@@ -122,100 +142,45 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 700px) and (max-width: 999px) {
-
-  body {
-    background: url('../img/background.png');
-  }
-
-  .block {
-    width: 50%;
-  }
-
-  h3 {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 2.125em;
-  }
-
-  .block p span {
-    font-size: 3.5rem;
-  }
-
-  .large-block {
-    height: 607px;
-  }
-
-  .dark-bg {
-    height: 850px;
-    width: 100%;
-  }
-
-
-  #eye h2 {
-    font-size: 2.7em;
-  }
-
-  #eye p {
-    font-size: 3.5em;
-  }
-
+@media only screen and (min-width: 590px) and (max-width: 700px) and (orientation: portrait) {
   #eye img {
-    width: 35%;
+    width: 42%;
   }
 
-  #grow {
-    order: 0;
-  }
-
-  #flower {
-    order: 1;
-  }
-
-  #freelance {
-    background: url('../img/background.png');
-    order: 2;
-  }
-
-  #code {
-    order: 3;
-  }
-
-  #travel{
-    background: url('../img/background.png');
-    order: 5;
-  }
-
-  #activity {
-    order: 4;
-  }
-
-  #dog {
-    order: 5;
-  }
-
-  #mind-body {
-    order: 6;
+  p, li {
+    font-size: 1.5em;
   }
 }
 
-@media screen and (min-width: 1000px) {
-
-  #grow, #freelance, #travel, #mind-body {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .center-align {
-    text-align: center;
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+  body {
+    max-width: 700px;
+    overflow-x: scroll;
   }
 
-  .right-align {
-    text-align: right;
+  #vision-board {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: auto;
+    height: 100vh;
   }
 
-  .left-align {
-    text-align: left;
+  .block {
+    height: 100vh;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .large-block {
+    min-width: 475px;
+  }
+
+  .small-block {
+    min-width: 320px;
+  }
+
+  img {
+    width: 37%;
   }
 }
